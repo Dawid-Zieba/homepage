@@ -1,4 +1,4 @@
-.table {
+.table__caption {
   font-family: "Lato", sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -14,17 +14,17 @@
   vertical-align: middle;
 }
 
-.table__cell--Header {
+.table__cell--header {
   background-color: #af434385;
   color: white;
   font-weight: normal;
 }
 
-.tableRow:nth-child(even) {
+.table__row:nth-child(even) {
   background: rgb(146, 47, 52);
 }
 
-.tableRow:hover {
+.table__row:hover {
   background: rgba(0, 0, 0, 0.089);
 }
 
@@ -32,9 +32,6 @@
   color: brown
 }
 
-.JA {
-  color: rgb(0, 0, 2);
-}
 .section__header {
   color:black;
   background-color: #af4e4e;
@@ -53,7 +50,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-.section__kolor {
+.section__header {
   background-color: rgba(165 229 164 / 68%);
   max-width: 100%;
   height: 30%;
@@ -71,7 +68,7 @@ html {
   box-sizing: inherit;
 }
 
-.zdjecie {
+.photo {
   border-radius: 100px;
 }
 
@@ -141,7 +138,7 @@ html {
   margin: 3px;
 }
 
-.section__przycisk {
+.section__button {
   background-color: #af434385;
   color: black;
   padding: 10px;
