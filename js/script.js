@@ -1,11 +1,22 @@
-console.log("Cześć!");
-let button = document.querySelector(".section__button");
-let background = document.querySelector(".background");
-let themeName = document.querySelector(".themeName");
+{
+    const welcome = () => {
+        console.log("Cześć!");
+    }
 
-button.addEventListener("click", () => {
-    background.classList.toggle("nextColorName")
+        const toggleBackground = () => {
+            const background = document.querySelector(".background");
+            const themeName = document.querySelector(".themeName")
 
-    themeName.innerText =
-        background.classList.contains("nextColorName") ? "Zmień" : "Zamień";
-});
+            background.classList.toggle("nextColorName");
+            themeName.innerText = background.classList.contains("nextColorName") ? "Zmień" : "Zamień";
+        };
+
+        const init = () => {
+            const button = document.querySelector(".section__button");
+            button.addEventListener("click", toggleBackground);
+
+            welcome();
+        }
+    
+    init();
+    }
